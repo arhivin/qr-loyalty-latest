@@ -1,20 +1,22 @@
 export default function Landing() {
   return (
     <div
-      style={{
-        minHeight: "100vh",
-        background: "#f6f6f4",
-        color: "#111",
-        fontFamily: "system-ui, -apple-system, sans-serif",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: 1100,
-          margin: "0 auto",
-          padding: "56px 24px 80px",
-        }}
-      >
+  style={{
+    minHeight: "100vh",
+    background: "#f6f6f4",
+    color: "#111",
+    fontFamily: "system-ui, -apple-system, sans-serif",
+    padding: "16px",
+    boxSizing: "border-box"
+  }}
+>
+  <div
+    style={{
+      maxWidth: 1100,
+      margin: "0 auto",
+      padding: "56px 24px 80px",
+    }}
+  >
         <div
           style={{
             display: "inline-block",
