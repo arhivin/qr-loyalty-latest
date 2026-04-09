@@ -7,7 +7,8 @@ export default function Landing() {
     color: "#111",
     fontFamily: "system-ui, -apple-system, sans-serif",
     padding: "16px",
-    boxSizing: "border-box"
+    boxSizing: "border-box",
+    overflowX: "hidden"
   }}
 >
   <div
