@@ -36,7 +36,7 @@ export default function Landing() {
           style={{
             marginTop: 28,
             display: "grid",
-            gridTemplateColumns: "1.2fr 0.8fr",
+            gridTemplateColumns: window.innerWidth < 768 ? "1fr" : "1.2fr 0.8fr",
             gap: 28,
             alignItems: "stretch",
           }}
@@ -247,7 +247,7 @@ export default function Landing() {
           style={{
             marginTop: 28,
             display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
+            gridTemplateColumns: window.innerWidth < 768 ? "1fr" : "repeat(3, 1fr)",
             gap: 18,
           }}
         >
