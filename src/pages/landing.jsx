@@ -1,23 +1,24 @@
 export default function Landing() {
   return (
     <div
-  style={{
-    minHeight: "100vh",
-    background: "#f6f6f4",
-    color: "#111",
-    fontFamily: "system-ui, -apple-system, sans-serif",
-    padding: "16px",
-    boxSizing: "border-box",
-    overflowX: "hidden"
-  }}
->
-  <div
-    style={{
-      maxWidth: 1100,
-      margin: "0 auto",
-      padding: "56px 24px 80px",
-    }}
-  >
+      style={{
+        minHeight: "100vh",
+        background: "#f6f6f4",
+        color: "#111",
+        fontFamily: "system-ui, -apple-system, sans-serif",
+        padding: "16px",
+        boxSizing: "border-box",
+        overflowX: "hidden",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: 1100,
+          margin: "0 auto",
+          padding: "24px 12px 40px",
+        }}
+      >
+        {/* ÜST BADGE */}
         <div
           style={{
             display: "inline-block",
@@ -26,242 +27,150 @@ export default function Landing() {
             background: "#111",
             color: "#fff",
             fontSize: 13,
-            fontWeight: 700,
-            letterSpacing: 0.3,
+            fontWeight: 600,
           }}
         >
           QR Loyalty Demo
         </div>
 
+        {/* HERO CARD */}
         <div
           style={{
-            marginTop: 28,
-            display: "grid",
-            gridTemplateColumns: "1fr",
-            gap: 28,
-            alignItems: "stretch",
+            marginTop: 20,
+            background: "#fff",
+            borderRadius: 24,
+            padding: 24,
+            width: "100%",
+            boxSizing: "border-box",
           }}
         >
-          <div
-            style={{
-              background: "#fff",
-              borderRadius: 24,
-              padding: 36,
-              boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
-              border: "1px solid rgba(0,0,0,0.06)",
-            }}
-          >
-            <div
-              style={{
-                fontSize: 14,
-                fontWeight: 700,
-                color: "#666",
-                letterSpacing: 0.2,
-              }}
-            >
-              Kafeler için hızlı sadakat çözümü
-            </div>
-
-            <h1
-              style={{
-                marginTop: 14,
-                fontSize: 48,
-                lineHeight: 1.05,
-                marginBottom: 0,
-                fontWeight: 900,
-                letterSpacing: -1.4,
-              }}
-            >
-              Kart bastırmadan
-              <br />
-              QR ile müşteri bağlılığı
-            </h1>
-
-            <p
-              style={{
-                marginTop: 20,
-                fontSize: 18,
-                lineHeight: 1.6,
-                color: "#444",
-                maxWidth: 700,
-              }}
-            >
-              Müşteri QR okutur, kasada onaylanır, puanı birikir. Üyelik yok,
-              uygulama yok, gereksiz veri yok.
-            </p>
-
-            <div
-              style={{
-                marginTop: 26,
-                display: "flex",
-                gap: 12,
-                flexWrap: "wrap",
-                alignItems: "center",
-              }}
-            >
-              <a
-                href="/qr-1?m=forshanti"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "14px 22px",
-                  background: "#111",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  fontSize: 16,
-                  minHeight: 48,
-                  boxSizing: "border-box",
-                }}
-              >
-                Demo’yu dene
-              </a>
-
-              <a
-                href="https://wa.me/905301389731?text=QR%20sadakat%20sistemi%20hakkında%20bilgi%20almak%20istiyorum"
-                target="_blank"
-                rel="noreferrer"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "14px 22px",
-                  background: "#25D366",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  fontSize: 16,
-                  minHeight: 48,
-                  boxSizing: "border-box",
-                }}
-              >
-                İşletmem için kur
-              </a>
-
-              <div
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  padding: "14px 18px",
-                  background: "#f1f1ee",
-                  borderRadius: 12,
-                  fontWeight: 600,
-                  fontSize: 15,
-                  color: "#333",
-                  minHeight: 48,
-                  boxSizing: "border-box",
-                }}
-              >
-                Kişisel veri toplamaz
-              </div>
-            </div>
-
-            <div
-              style={{
-                marginTop: 28,
-                display: "flex",
-                gap: 10,
-                flexWrap: "wrap",
-              }}
-            >
-              {[
-                "Üyelik yok",
-                "Uygulama yok",
-                "POS onaylı",
-                "Günlük limitli",
-              ].map((item) => (
-                <div
-                  key={item}
-                  style={{
-                    padding: "10px 14px",
-                    background: "#fafaf8",
-                    border: "1px solid rgba(0,0,0,0.08)",
-                    borderRadius: 999,
-                    fontSize: 14,
-                    fontWeight: 600,
-                    color: "#333",
-                  }}
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
+          <div style={{ color: "#666", fontSize: 14 }}>
+            Kafeler için hızlı sadakat çözümü
           </div>
 
-          <div
+          <h1
             style={{
-              background: "#111",
-              color: "#fff",
-              borderRadius: 24,
-              padding: 28,
-              boxShadow: "0 10px 30px rgba(0,0,0,0.10)",
+              fontSize: 34,
+              lineHeight: 1.1,
+              marginTop: 10,
+              marginBottom: 12,
             }}
           >
-            <div style={{ fontSize: 14, opacity: 0.7, fontWeight: 700 }}>
-              Nasıl çalışır
-            </div>
+            Kart bastırmadan
+            <br />
+            QR ile müşteri bağlılığı
+          </h1>
 
-            <div style={{ marginTop: 24, display: "grid", gap: 18 }}>
-              {[
-                ["1", "Müşteri QR’ı okutur"],
-                ["2", "Kasada doğrulama yapılır"],
-                ["3", "Puan otomatik işlenir"],
-                ["4", "Aynı gün ikinci basış engellenir"],
-              ].map(([n, text]) => (
-                <div
-                  key={n}
-                  style={{
-                    display: "flex",
-                    gap: 14,
-                    alignItems: "flex-start",
-                    padding: 16,
-                    background: "rgba(255,255,255,0.06)",
-                    borderRadius: 16,
-                  }}
-                >
-                  <div
-                    style={{
-                      minWidth: 34,
-                      height: 34,
-                      borderRadius: 999,
-                      background: "#fff",
-                      color: "#111",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      fontWeight: 800,
-                    }}
-                  >
-                    {n}
-                  </div>
-                  <div style={{ fontSize: 16, lineHeight: 1.5 }}>{text}</div>
-                </div>
-              ))}
-            </div>
+          <p
+            style={{
+              fontSize: 16,
+              lineHeight: 1.5,
+              color: "#444",
+            }}
+          >
+            Müşteri QR okutur, kasada onaylanır, puanı birikir.
+            Üyelik yok, uygulama yok, gereksiz veri yok.
+          </p>
+
+          <div
+            style={{
+              marginTop: 18,
+              display: "flex",
+              flexDirection: "column",
+              gap: 10,
+            }}
+          >
+            <button
+              style={{
+                padding: "14px",
+                borderRadius: 12,
+                background: "#111",
+                color: "#fff",
+                border: "none",
+                fontSize: 16,
+              }}
+            >
+              Demo’yu dene
+            </button>
+
+            <button
+              style={{
+                padding: "14px",
+                borderRadius: 12,
+                background: "#22c55e",
+                color: "#fff",
+                border: "none",
+                fontSize: 16,
+              }}
+            >
+              İşletmem için kur
+            </button>
           </div>
         </div>
 
+        {/* NASIL ÇALIŞIR */}
         <div
           style={{
-            marginTop: 28,
-            display: "grid",
-            gridTemplateColumns: "1fr",
-            gap: 18,
+            marginTop: 24,
+            background: "#111",
+            borderRadius: 24,
+            padding: 20,
+            color: "#fff",
           }}
         >
+          <div style={{ marginBottom: 12, color: "#aaa" }}>
+            Nasıl çalışır
+          </div>
+
+          {[
+            "Müşteri QR’ı okutur",
+            "Kasada doğrulama yapılır",
+            "Puan otomatik işlenir",
+            "Aynı gün ikinci basış engellenir",
+          ].map((text, i) => (
+            <div
+              key={i}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 12,
+                background: "#222",
+                padding: "14px",
+                borderRadius: 14,
+                marginBottom: 10,
+              }}
+            >
+              <div
+                style={{
+                  width: 32,
+                  height: 32,
+                  borderRadius: "50%",
+                  background: "#fff",
+                  color: "#111",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontWeight: 700,
+                }}
+              >
+                {i + 1}
+              </div>
+              <div>{text}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* ALT KARTLAR */}
+        <div style={{ marginTop: 20, display: "flex", flexDirection: "column", gap: 12 }}>
           <div
             style={{
               background: "#fff",
               borderRadius: 20,
-              padding: 24,
-              border: "1px solid rgba(0,0,0,0.06)",
+              padding: 18,
             }}
           >
-            <div style={{ fontSize: 15, fontWeight: 800 }}>Hızlı kullanım</div>
-            <p style={{ marginTop: 10, color: "#555", lineHeight: 1.6 }}>
+            <b>Hızlı kullanım</b>
+            <p style={{ marginTop: 6, color: "#555" }}>
               Müşteri tarafında üyelik akışı yok. QR okut, göster, puan işle.
             </p>
           </div>
@@ -270,27 +179,12 @@ export default function Landing() {
             style={{
               background: "#fff",
               borderRadius: 20,
-              padding: 24,
-              border: "1px solid rgba(0,0,0,0.06)",
+              padding: 18,
             }}
           >
-            <div style={{ fontSize: 15, fontWeight: 800 }}>Anonim yapı</div>
-            <p style={{ marginTop: 10, color: "#555", lineHeight: 1.6 }}>
+            <b>Anonim yapı</b>
+            <p style={{ marginTop: 6, color: "#555" }}>
               İsim, telefon, e-posta toplamaz. Sistem cihaz bazlı anonim çalışır.
-            </p>
-          </div>
-
-          <div
-            style={{
-              background: "#fff",
-              borderRadius: 20,
-              padding: 24,
-              border: "1px solid rgba(0,0,0,0.06)",
-            }}
-          >
-            <div style={{ fontSize: 15, fontWeight: 800 }}>Kontrollü akış</div>
-            <p style={{ marginTop: 10, color: "#555", lineHeight: 1.6 }}>
-              Sadece tanımlı POS cihazı stamp basar. Aynı gün tekrar engellenir.
             </p>
           </div>
         </div>
